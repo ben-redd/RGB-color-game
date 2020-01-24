@@ -1,0 +1,172 @@
+/* Original Code */
+/* body {
+	background-color: #232323;
+	margin: 0;
+	font-family: 'Nunito', 'Arial';
+	font-weight: normal;
+}
+h1 {
+	color: white;
+	text-align: center;
+	background-color: steelblue;
+	margin: 0;
+	text-transform: uppercase;
+	line-height: 1.1;
+	padding: 20px 0;
+}
+button {
+	border: none;
+	outline: none;
+	background: none;
+	font-family: 'Nunito', 'Arial';
+	text-transform: uppercase;
+	height: 100%;
+	color: steelblue;
+	font-weight: 900;
+	letter-spacing: 1px;
+	font-size: inherit;
+	transition: all .5s;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+}
+button:hover {
+	background-color: steelblue;
+	color: white;
+}
+.square {
+	width: 30%;
+	padding-bottom: 30%;
+	float: left;
+	margin: 1.66%;
+	border-radius: 15%;
+	transition: background-color 0.6s;
+	-webkit-transition: background-color 0.6s;
+	-moz-transition: background-color 0.6s;
+}
+.selected {
+	background-color: steelblue;
+	color: white;
+	border: none;
+}
+.hidden {
+	display: none;
+}
+#stripe {
+	background-color: white;
+	color: black;
+	height: 2em;
+	text-align: center;
+}
+#container {
+	max-width: 600px;
+	margin: 20px auto;
+}
+#colorDisplay {
+	font-size: 200%;
+}
+#message {
+	display: inline-block;
+	width: 20%;
+	font-family: 'Nunito', 'Arial';
+	text-transform: uppercase;
+	font-weight: 900;
+	letter-spacing: 1px;
+	font-size: inherit;
+} */
+
+/* refactored Code */
+body {
+	background-color: #232323;
+	margin: 0;
+	font-family: 'Nunito', 'Arial';
+	font-weight: normal;
+}
+h1 {
+	color: white;
+	text-align: center;
+	background-color: steelblue;
+	margin: 0;
+	text-transform: uppercase;
+	line-height: 1.1;
+	padding: 20px 0;
+}
+button {
+	border: none;
+	outline: none;
+	background: none;
+	font-family: 'Nunito', 'Arial';
+	text-transform: uppercase;
+	height: 100%;
+	color: steelblue;
+	font-weight: 900;
+	letter-spacing: 1px;
+	font-size: inherit;
+	transition: all .5s;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+}
+button:hover {
+	background-color: steelblue;
+	color: white;
+}
+.square {
+	width: 30%;
+	padding-bottom: 30%;
+	float: left;
+	margin: 1.66%;
+	border-radius: 15%;
+	outline: none;
+	border: none;
+	transition: background-color .6s;
+	-webkit-transition: background-color .6s;
+	-moz-transition: background-color .6s;
+	/* prevents faint leftover lines after transition */
+	transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-webkit-transform: translateZ(0);
+}
+.extremeSquares {
+	width: 22%;
+	padding-bottom: 20%;
+	float: left;
+	margin: 1.5%;
+	border-radius: 15%;
+	transition: background-color 0.6s;
+	-webkit-transition: background-color 0.6s;
+	-moz-transition: background-color 0.6s;
+	/* prevents faint leftover lines after transition */
+	transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-webkit-transform: translateZ(0);
+}
+.selected {
+	background-color: steelblue;
+	color: white;
+	border: none;
+}
+.hidden {
+	display: none;
+}
+#stripe {
+	background-color: white;
+	color: black;
+	height: 2em;
+	text-align: center;
+}
+#container {
+	max-width: 800px;
+	margin: 20px auto;
+}
+#colorDisplay {
+	font-size: 200%;
+}
+#message {
+	display: inline-block;
+	width: 20%;
+	font-family: 'Nunito', 'Arial';
+	text-transform: uppercase;
+	font-weight: 900;
+	letter-spacing: 1px;
+	font-size: inherit;
+	padding-left: 75px;
+}
